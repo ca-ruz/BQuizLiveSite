@@ -13,26 +13,27 @@
 <nav>
   <a href="#" class="nav-logo">₿<span>Quiz</span> <span class="live">Live</span></a>
   <div class="nav-links">
-    <a href="#features">Características</a>
-    <a href="#install">Instalación</a>
+    <a href="#features" data-i18n="nav-features">Características</a>
+    <a href="#install" data-i18n="nav-install">Instalación</a>
     <a href="#lightning">Lightning</a>
-    <a href="https://github.com/ca-ruz/bitcoin-quiz-live" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a href="https://github.com/ca-ruz/BQuizLive" target="_blank" rel="noopener noreferrer">GitHub</a>
   </div>
+  <button class="btn btn-primary btn-lang" id="btn-lang">EN</button>
 </nav>
 
 <!-- ── Hero ─────────────────────────────────────────────────── -->
 <section class="hero">
   <div class="hero-badge">⚡ Open Source · GPL v3</div>
-  <h1>Quiz de <span class="bitcoin">Bitcoin</span><br/>para tu meetup</h1>
-  <p>
+  <h1 data-i18n="hero-h1">Quiz de <span class="bitcoin">Bitcoin</span><br/>para tu meetup</h1>
+  <p data-i18n="hero-desc">
     Multijugador en tiempo real estilo Kahoot. Los participantes se unen desde su celular,
     responden preguntas sobre Bitcoin y el ganador recibe sats por Lightning Network.
   </p>
   <div class="hero-buttons">
-    <a class="btn btn-primary" href="https://github.com/ca-ruz/bitcoin-quiz-live" target="_blank" rel="noopener noreferrer">
+    <a class="btn btn-primary" href="https://github.com/ca-ruz/BQuizLive" target="_blank" rel="noopener noreferrer" data-i18n="btn-github">
       Ver en GitHub
     </a>
-    <a class="btn btn-outline" href="#install">
+    <a class="btn btn-outline" href="#install" data-i18n="btn-install">
       Cómo instalarlo
     </a>
   </div>
@@ -43,113 +44,113 @@
   <div class="demo-screen">
     <div class="demo-card">
       <div class="icon">🖥️</div>
-      <strong>Presentador</strong>
-      <p>Crea la sala, muestra el QR y observa las respuestas en vivo</p>
+      <strong data-i18n="demo-host-title">Presentador</strong>
+      <p data-i18n="demo-host-desc">Crea la sala, muestra el QR y observa las respuestas en vivo</p>
     </div>
     <div class="demo-card">
       <div class="icon">📱</div>
-      <strong>Jugadores</strong>
-      <p>Escanean el QR, ingresan su apodo y responden desde su celular</p>
+      <strong data-i18n="demo-players-title">Jugadores</strong>
+      <p data-i18n="demo-players-desc">Escanean el QR, ingresan su apodo y responden desde su celular</p>
     </div>
     <div class="demo-card">
       <div class="icon">⏱️</div>
-      <strong>Tiempo real</strong>
-      <p>Temporizador por pregunta · marcador live · avance automático</p>
+      <strong data-i18n="demo-realtime-title">Tiempo real</strong>
+      <p data-i18n="demo-realtime-desc">Temporizador por pregunta · marcador live · avance automático</p>
     </div>
     <div class="demo-card">
       <div class="icon">⚡</div>
-      <strong>Recompensa</strong>
-      <p>El ganador recibe sats vía Lightning Network.</p>
+      <strong data-i18n="demo-reward-title">Recompensa</strong>
+      <p data-i18n="demo-reward-desc">El ganador recibe sats vía Lightning Network.</p>
     </div>
   </div>
 </div>
 
 <!-- ── Features ──────────────────────────────────────────────── -->
 <section id="features">
-  <div class="section-label">Características</div>
-  <h2>Todo lo que necesitas para un meetup</h2>
-  <p class="subtitle">Funciona en cualquier red WiFi local. Sin servidores externos, sin cuentas, sin complicaciones.</p>
+  <div class="section-label" data-i18n="section-features">Características</div>
+  <h2 data-i18n="feat-h2">Todo lo que necesitas para un meetup</h2>
+  <p class="subtitle" data-i18n="feat-subtitle">Funciona en cualquier red WiFi local. Sin servidores externos, sin cuentas, sin complicaciones.</p>
 
   <div class="features">
     <div class="feature">
       <div class="icon">🟠</div>
-      <h3>25 preguntas de Bitcoin</h3>
-      <p>Cubren blockchain, minería, Lightning Network, claves privadas, autocustodia y más — diseñadas para principiantes.</p>
+      <h3 data-i18n="feat-1-title">~100 preguntas de Bitcoin</h3>
+      <p data-i18n="feat-1-desc">Cubren blockchain, minería, Lightning Network, claves privadas, autocustodia y más — diseñadas para principiantes.</p>
     </div>
     <div class="feature">
       <div class="icon">⚡</div>
-      <h3>Puntuación por velocidad</h3>
-      <p>Respuesta correcta al instante = 100 pts. Al último segundo = 50 pts. Respuesta incorrecta = 0. La rapidez importa.</p>
+      <h3 data-i18n="feat-2-title">Puntuación por velocidad</h3>
+      <p data-i18n="feat-2-desc">Respuesta correcta al instante = 100 pts. Al último segundo = 50 pts. Respuesta incorrecta = 0. La rapidez importa.</p>
     </div>
     <div class="feature">
       <div class="icon">⚙️</div>
-      <h3>Flujo automático</h3>
-      <p>La pregunta termina cuando alguien acierta o todos respondieron. El siguiente turno inicia solo.</p>
+      <h3 data-i18n="feat-3-title">Flujo automático</h3>
+      <p data-i18n="feat-3-desc">La pregunta termina cuando alguien acierta o todos respondieron. El siguiente turno inicia solo.</p>
     </div>
     <div class="feature">
       <div class="icon">📡</div>
-      <h3>Estadísticas en vivo</h3>
-      <p>El presentador ve qué opción eligió cada jugador en tiempo real, con barras de porcentaje por respuesta.</p>
+      <h3 data-i18n="feat-4-title">Marcador en vivo</h3>
+      <p data-i18n="feat-4-desc">El presentador y la audiencia ven la clasificación actualizada después de cada pregunta.</p>
     </div>
     <div class="feature">
       <div class="icon">🏆</div>
-      <h3>Marcador en tiempo real</h3>
-      <p>Clasificación actualizada después de cada pregunta. Los participantes ven su posición y puntaje al instante.</p>
+      <h3 data-i18n="feat-5-title">Respuesta correcta en pantalla</h3>
+      <p data-i18n="feat-5-desc">Al terminar cada pregunta, la respuesta correcta y su explicación se muestran en grande — ideal para proyector.</p>
     </div>
     <div class="feature">
       <div class="icon">💸</div>
-      <h3>Pago Lightning</h3>
-      <p>Conecta tu wallet vía NWC o tu nodo LND. El ganador recibe sats directamente.</p>
+      <h3 data-i18n="feat-6-title">Pago Lightning</h3>
+      <p data-i18n="feat-6-desc">Conecta tu wallet vía NWC o tu nodo LND. El ganador recibe sats directamente.</p>
     </div>
     <div class="feature">
       <div class="icon">📲</div>
       <h3>Mobile-first</h3>
-      <p>Botones grandes, tipografía legible, optimizado para pantallas pequeñas. Funciona en cualquier navegador.</p>
+      <p data-i18n="feat-7-desc">Botones grandes, tipografía legible, optimizado para pantallas pequeñas. Funciona en cualquier navegador.</p>
     </div>
     <div class="feature">
       <div class="icon">🌐</div>
       <h3>100% Open Source</h3>
-      <p>GPL v3. Sin tracking, sin telemetría, sin servicios externos obligatorios. Tuyo para siempre.</p>
+      <p data-i18n="feat-8-desc">GPL v3. Sin tracking, sin telemetría, sin servicios externos obligatorios. Tuyo para siempre.</p>
     </div>
   </div>
 </section>
 
 <!-- ── Install ────────────────────────────────────────────────── -->
 <section id="install">
-  <div class="section-label">Instalación</div>
-  <h2>Listo en 2 minutos</h2>
-  <p class="subtitle">Node.js es el único requisito. Funciona en cualquier sistema operativo.</p>
+  <div class="section-label" data-i18n="section-install">Instalación</div>
+  <h2 data-i18n="install-h2">Listo en 2 minutos</h2>
+  <p class="subtitle" data-i18n="install-subtitle">Node.js es el único requisito. Funciona en cualquier sistema operativo.</p>
 
   <div class="steps">
     <div class="step">
       <div class="step-num">1</div>
       <div class="step-body">
-        <h3>Clona el repositorio</h3>
-        <div class="pre-wrap"><pre>git clone https://github.com/ca-ruz/bitcoin-quiz-live
-cd bitcoin-quiz-live</pre></div>
+        <h3 data-i18n="step-1-h3">Clona el repositorio</h3>
+        <div class="pre-wrap"><pre>git clone https://github.com/ca-ruz/BQuizLive
+cd BQuizLive</pre></div>
       </div>
     </div>
     <div class="step">
       <div class="step-num">2</div>
       <div class="step-body">
-        <h3>Instala las dependencias</h3>
+        <h3 data-i18n="step-2-h3">Instala las dependencias</h3>
         <div class="pre-wrap"><pre>npm install</pre></div>
       </div>
     </div>
     <div class="step">
       <div class="step-num">3</div>
       <div class="step-body">
-        <h3>Configura el entorno</h3>
-        <div class="pre-wrap"><pre>cp .env.example .env
+        <h3 data-i18n="step-3-h3">Configura el entorno</h3>
+        <div class="pre-wrap"><pre data-i18n="step-3-code">cp .env.example .env
 # edita .env si quieres conectar Lightning</pre></div>
       </div>
     </div>
     <div class="step">
       <div class="step-num">4</div>
       <div class="step-body">
-        <h3>Inicia el servidor</h3>
+        <h3 data-i18n="step-4-h3">Inicia el servidor</h3>
         <div class="pre-wrap"><pre>npm start</pre></div>
-        <p>Presentador: <code>http://localhost:3000/host.html</code> · Jugadores: <code>http://&lt;tu-IP-local&gt;:3000</code></p>
+        <p data-i18n="step-4-desc">Presentador: <code>http://localhost:3000/host.html</code> · Jugadores: <code>http://&lt;tu-IP-local&gt;:3000</code></p>
       </div>
     </div>
   </div>
@@ -158,29 +159,29 @@ cd bitcoin-quiz-live</pre></div>
 <!-- ── Lightning ─────────────────────────────────────────────── -->
 <section id="lightning">
   <div class="section-label">Lightning Network</div>
-  <h2>Paga al ganador en sats</h2>
-  <p class="subtitle">Dos formas de conectar Lightning. Si no configuras ninguna, el servidor calcula el monto y el presentador paga manualmente.</p>
+  <h2 data-i18n="lightning-h2">Paga al ganador en sats</h2>
+  <p class="subtitle" data-i18n="lightning-subtitle">Dos formas de conectar Lightning. Si no configuras ninguna, el servidor calcula el monto y el presentador paga manualmente.</p>
 
   <div class="lightning-options">
     <div class="ln-card recommended">
-      <div class="ln-badge">Recomendado</div>
+      <div class="ln-badge" data-i18n="ln-badge">Recomendado</div>
       <h3>⚡ NWC — Nostr Wallet Connect</h3>
-      <p>La opción más fácil. Solo necesitas una URL de conexión desde tu wallet. Sin certificados, sin puertos.</p>
+      <p data-i18n="nwc-desc">La opción más fácil. Solo necesitas una URL de conexión desde tu wallet. Sin certificados, sin puertos.</p>
       <ul>
         <li>Alby (getalby.com)</li>
         <li>Zeus</li>
         <li>Bitkit</li>
-        <li>Cualquier wallet con soporte NWC</li>
+        <li data-i18n="nwc-li-4">Cualquier wallet con soporte NWC</li>
       </ul>
       <div class="pre-wrap"><pre>NWC_URL=nostr+walletconnect://...</pre></div>
     </div>
     <div class="ln-card">
       <h3>🔧 LND REST API</h3>
-      <p>Para quienes operan su propio nodo Bitcoin/Lightning. Requiere acceso al REST API de LND.</p>
+      <p data-i18n="lnd-desc">Para quienes operan su propio nodo Bitcoin/Lightning. Requiere acceso al REST API de LND.</p>
       <ul>
         <li>LND_REST_URL</li>
         <li>LND_MACAROON (hex)</li>
-        <li>LND_CERT (base64, opcional)</li>
+        <li data-i18n="lnd-li-3">LND_CERT (base64, opcional)</li>
       </ul>
       <div class="pre-wrap"><pre>LND_REST_URL=https://tu-nodo:8080
 LND_MACAROON=abc123...</pre></div>

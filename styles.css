@@ -35,7 +35,7 @@ nav {
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
   padding: 14px 24px;
-  display: flex; align-items: center; justify-content: space-between;
+  display: flex; align-items: center; justify-content: flex-start;
   gap: 16px;
 }
 .nav-logo {
@@ -46,7 +46,7 @@ nav {
 .nav-logo span { color: var(--text); }
 .nav-logo .live { color: var(--accent); text-shadow: 0 0 14px rgba(57,255,20,.5); }
 .hero h1 .bitcoin { color: var(--orange); text-shadow: 0 0 30px rgba(255,119,0,.6), 0 0 60px rgba(255,119,0,.25); }
-.nav-links { display: flex; gap: 20px; font-size: .9rem; }
+.nav-links { display: flex; gap: 20px; font-size: .9rem; margin-left: auto; }
 .nav-links a { color: var(--purple); }
 .nav-links a:hover { color: var(--text); text-decoration: none; }
 
@@ -111,6 +111,13 @@ nav {
   background: rgba(176,68,255,.2);
   border-color: rgba(176,68,255,.75);
   box-shadow: 0 0 22px rgba(176,68,255,.35);
+}
+.btn-lang {
+  padding: 7px 16px;
+  font-size: .82rem;
+  border-radius: 8px;
+  flex-shrink: 0;
+  font-family: inherit;
 }
 
 /* ── Demo screenshot placeholder ── */
